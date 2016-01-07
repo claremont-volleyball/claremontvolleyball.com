@@ -1,27 +1,44 @@
 /*
-	Eventually by HTML5 UP
+	ZeroFour by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* BG */
+/* Basic */
 
-	#bg {
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+	.button,
+	.image img {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Type */
+/* Wrappers */
 
-	body, input, select, textarea {
-		color: #fff;
+	#header-wrapper {
+		background: url("../../images/header.jpg");
+		background-position: center center;
+		background-size: cover;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
 
-/* Form */
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border: solid 2px #fff;
+	#main-wrapper .main-wrapper-style1,
+	#main-wrapper .main-wrapper-style3 {
+		background: #f8f8f8;
 	}
+
+/* Header */
+
+	#header .inner {
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Nav */
+
+	.dropotron {
+		box-shadow: 0;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.dropotron.level-0 {
+			box-shadow: 0;
+			-ms-behavior: url("assets/js/ie/PIE.htc");
+		}
