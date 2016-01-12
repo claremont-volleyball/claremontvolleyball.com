@@ -39,13 +39,13 @@
             {% if page.url == node.url %}
                 class="current_page_item"
                {% endif %}
-          {% endfor %}><a href="left-sidebar.html">Calendar</a></li>
+          {% endfor %}><a href="/calendar/">Calendar</a></li>
           <li
           {% for node in site.pages %}
             {% if page.url == node.url %}
                 class="current_page_item"
                {% endif %}
-          {% endfor %}><a href="right-sidebar.html">Announcement</a></li>
+          {% endfor %}><a href="/announcement">Announcement</a></li>
         </ul>
       </nav>
 
