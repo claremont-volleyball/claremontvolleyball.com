@@ -1718,7 +1718,7 @@
 /* Wrappers */
 
 	#header-wrapper {
-		background: url("/images/bg01.png"), url("/images/vball-web.png");
+		background: url("/images/banner.png");
 		background-position: top left, center center;
 		background-size: auto, cover;
 	}

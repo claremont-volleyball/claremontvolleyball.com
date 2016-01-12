@@ -7,8 +7,16 @@
     <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li class="current_page_item"><a href="index.html">Home</a></li>
-          <li>
+          <li
+            {% if page.url == '/index.html' %}
+              class="current_page_item"
+            {% endif %}>
+          <a href="/">Home</a></li>
+          <li
+            {% if page.url == "/mens/index.html" %}
+              {{ page.url }}
+              class="current_page_item"
+            {% endif %}>
             <a href="#">Men's</a>
             <ul>
               <li><a href="/mens">Home</a></li>
@@ -26,8 +34,18 @@
               <li><a href="#">Announcement</a></li>
             </ul>
           </li>
-          <li><a href="left-sidebar.html">Calendar</a></li>
-          <li><a href="right-sidebar.html">Announcement</a></li>
+          <li
+          {% for node in site.pages %}
+            {% if page.url == node.url %}
+                class="current_page_item"
+               {% endif %}
+          {% endfor %}><a href="left-sidebar.html">Calendar</a></li>
+          <li
+          {% for node in site.pages %}
+            {% if page.url == node.url %}
+                class="current_page_item"
+               {% endif %}
+          {% endfor %}><a href="right-sidebar.html">Announcement</a></li>
         </ul>
       </nav>
 
