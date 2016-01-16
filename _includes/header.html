@@ -25,27 +25,29 @@
               <li><a href="#">Announcement</a></li>
             </ul>
           </li>
-          <li>
+          <li
+          {% if page.url == "/womens/index.html" %}
+            {{ page.url }}
+            class="current_page_item"
+          {% endif %}>
             <a href="#">Women's</a>
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="womens/index.html">Home</a></li>
               <li><a href="#">Roster</a></li>
               <li><a href="#">Schedule</a></li>
               <li><a href="#">Announcement</a></li>
             </ul>
           </li>
           <li
-          {% for node in site.pages %}
-            {% if page.url == node.url %}
-                class="current_page_item"
-               {% endif %}
-          {% endfor %}><a href="/calendar">Calendar</a></li>
+          {% if page.url == "/calendar/index.html" %}
+            {{ page.url }}
+            class="current_page_item"
+          {% endif %}><a href="/calendar">Calendar</a></li>
           <li
-          {% for node in site.pages %}
-            {% if page.url == node.url %}
-                class="current_page_item"
-               {% endif %}
-          {% endfor %}><a href="/announcement">Announcement</a></li>
+          {% if page.url == "/announcement/index.html" %}
+            {{ page.url }}
+            class="current_page_item"
+          {% endif %}><a href="/announcement">Announcement</a></li>
         </ul>
       </nav>
 
