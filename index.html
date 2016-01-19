@@ -1,137 +1,333 @@
 ---
 ---
-<!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Claremont Volleyball</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/slick.css" />
-		<link rel="shortcut icon" href="images/favicon.png">
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<style>
-		.claremont {
-			color: #faa41a;
-		}
-		.slides div img {
-			height: 800px;
-		}
-		.slick-slide img {
-			display: inline-block;
-		}
-  </style>
-	</style>
-	<body class="homepage">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claremont Volleyball</title>
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<div class="container">
+    <!-- Bootstrap -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
 
-						<!-- Header -->
-							{% include header.html %}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
 
-						<!-- Banner -->
-							<div id="banner">
-								<h2>Welcome to the <strong>Claremont Volleyball</strong> team</h2>
-								<p>Does this statement make you want to click the big shiny button?</p>
-								<a href="#" class="button big icon fa-check-circle">Yes it does</a>
-							</div>
+    <div id="page" class="hfeed site"><!-- start page wrapper -->
 
-					</div>
-				</div>
+      {% include header.html %}
 
-			<!-- Main Wrapper -->
-				<div id="main-wrapper">
-					<div class="wrapper style1">
-						<div class="inner">
+    	<div id="preloader"></div>
 
-							<!-- Feature 1 -->
-								<section class="container box feature1">
-									<div class="row">
-										<div class="12u">
-											<header class="first major">
-												<h2>Claremont</h2>
-												<body>
-												  <div class="slides">
-												    <div><img src="images/mens/nationals-team.jpg" alt="Slide 1" /></div>
-												    <div><img src="images/mens/earl-spike.jpg" alt="Slide 2" /></div>
-												    <div><img src="images/womens/madison-spike.png" alt="Slide 3" /></div>
-												  </div>
-												</body>
-											</header>
-										</div>
-									</div>
-									<div class="row">
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-												<header class="second icon fa-user">
-													<h3>Here's a Heading</h3>
-													<p>And a subtitle</p>
-												</header>
-											</section>
-										</div>
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-												<header class="second icon fa-cog">
-													<h3>Also a Heading</h3>
-													<p>And another subtitle</p>
-												</header>
-											</section>
-										</div>
-										<div class="4u 12u(mobile)">
-											<section>
-												<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-												<header class="second icon fa-bar-chart-o">
-													<h3>Another Heading</h3>
-													<p>And yes, a subtitle</p>
-												</header>
-											</section>
-										</div>
-									</div>
-									<div class="row">
-										<div class="12u">
-											<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper
-											bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod
-											quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit
-											amet pulvinar. Nam nec turpis.</p>
-										</div>
-									</div>
-								</section>
+		<!-- CAROUSEL SECTION -->
+    	<div id="carousel-home" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+		    	<li data-target="#carousel-home" data-slide-to="1"></li>
+		    	<li data-target="#carousel-home" data-slide-to="2"></li>
+		  	</ol>
 
+		  	<!-- Wrapper for slides -->
+		  	<div class="carousel-inner">
+		    	<div class="item active">
+		      		<img src="/assets/images/mens/earl-spike.jpg" alt="">
+		      		<div class="carousel-caption">
+		      			<h3>Welcome to Claremont Volleyball</h3>
+		      			<a href="menu.html" class="btn btn-sm btn-default">Our Menu <i class="fa fa-fw fa-long-arrow-right"></i></a>
+		      		</div>
+		    	</div>
+
+			    <div class="item">
+			      	<img src="/assets/images/womens/madison-spike.png" alt="">
+			      	<div class="carousel-caption">
+			      		<h3>Chef's Specials</h3>
+			      		<a href="menu.html" class="btn btn-sm btn-default">Click Here <i class="fa fa-fw fa-long-arrow-right"></i></a>
+			      	</div>
+			    </div>
+			    <div class="item">
+			      	<img src="/assets/images/mens/nationals-team.jpg" alt="">
+			      	<div class="carousel-caption">
+			      		<h3>Our Recipes</h3>
+			      		<a href="recipes.html" class="btn btn-sm btn-default">See All <i class="fa fa-fw fa-long-arrow-right"></i></a>
+			      	</div>
+			    </div>
+			</div><!-- end carousel inner -->
+
+			<!-- Controls -->
+
+			<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+				<span class="fa fa-fw fa-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+			    <span class="fa fa-fw fa-chevron-right"></span>
+			</a>
+
+		</div> <!-- Carousel -->
+
+		<section class="home-service">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-service">
+						<span class="small-icon">
+							<i class="fa fa-fw fa-star"></i>
+						</span>
+						<div class="small-icon-text">
+							<h4>Welcome to Arezzo</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div><!-- end text -->
+					</div><!-- end column -->
+
+					<div class="col-service">
+						<span class="small-icon">
+							<i class="fa fa-fw fa-check"></i>
+						</span>
+						<div class="small-icon-text">
+							<h4>Excellent food</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div><!-- end text -->
+					</div><!-- end column -->
+
+					<div class="col-service">
+						<span class="small-icon">
+							<i class="fa fa-fw fa-heart"></i>
+						</span>
+						<div class="small-icon-text">
+							<h4>You'll love it</h4>
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div><!-- end text -->
+					</div><!-- end column -->
+
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end service-row -->
+
+		<section class="home-about">
+			<div class="container">
+				<div class="row">
+					<div class="about-text">
+						<h3 class="home-title large-title">Excellent Food</h3>
+						<p class="trigger animated fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+						feugait nulla facilisi.</p>
+						<p><a href="#" class="btn btn-default">Learn More</a></p>
+					</div><!-- end column -->
+					<div class="about-figure">
+						<figure>
+							<img src="/assets/images/content/about-img.png" alt="">
+						</figure>
+					</div><!-- end column -->
+				</div><!-- end row -->
+			</div>
+		</section><!-- end about -->
+
+		<section class="portfolio">
+			<div class="container">
+				<div class="row no-gutter">
+
+					<div id="filter">
+						<ul id="options">
+							<li><a data-filter="*" href="#" class="selected">All</a></li>
+							<li><a data-filter=".breakfast" href="#">Breakfast</a></li>
+							<li><a data-filter=".lunch" href="#">Lunch</a></li>
+							<li><a data-filter=".dinner" href="#">Dinner</a></li>
+						</ul>
+					</div><!-- end #filter -->
+
+
+					<div id="foliowrap">
+						<figure class="foliobox breakfast">
+							<img src="/assets/images/content/food-1.jpg" alt="">
+							<figcaption>
+								<span class="folcat">Breakfast</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+
+						<figure class="foliobox breakfast">
+							<img src="/assets/images/content/food-2.jpg" alt="">
+							<figcaption>
+								<span class="folcat">Breakfast</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+
+						<figure class="foliobox  dinner">
+							<img src="/assets/images/content/food-3.jpg" alt="">
+							<figcaption>
+								<span class="folcat">Dinner</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+
+						<figure class="foliobox dinner lunch">
+							<img src="/assets/images/content/food-4.jpg" alt="">
+							<figcaption>
+								<span class="folcat">Lunch</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+						<figure class="foliobox breakfast  dinner">
+							<img src="/assets/images/content/food-5.jpg" alt="">
+							<figcaption>
+								<span class="folcat">dinner</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+						<figure class="foliobox lunch ">
+							<img src="/assets/images/content/food-6.jpg" alt="">
+							<figcaption>
+								<span class="folcat">Lunch</span>
+								<h3 class="foltitle">Lorem Ipsum</h3>
+								<a href="#" class="goto">View</a>
+							</figcaption>
+						</figure><!-- end foliobox -->
+					</div><!-- end #foliowrap -->
+
+					<div class="contact-hero">
+						<div class="pull-left">
+							<p>Come and experience chef's special</p>
 						</div>
-					</div>
-				</div>
+						<div class="pull-right">
+							<a href="#" class="btn btn-lg btn-default">Book now</a>
+						</div>
+					</div><!-- end contact-hero -->
 
-			<!-- Footer Wrapper -->
-				<div id="footer-wrapper">
-					{% include footer.html %}
-				</div>
+				</div><!-- end row -->
+			</div>
+		</section><!-- end portfolio -->
 
-		</div>
+		<section class="bloghome">
+			<div class="container">
+				<div class="row">
+					<h3 class="home-title">Latest Recipes</h3>
 
-		<!-- Scripts -->
+					<div class="col-sm-4">
+						<div class="inner">
+							<figure class="w-thumb">
+								<img src="/assets/imagescontent/recipe-1.jpg" alt="">
+							</figure>
+							<div class="entry-header">
+								<time class="published" datetime="2015-02-21" title="">February 21, 2015</time>
+								<h2 class="post-title entry-title">
+									<a href="#">Family Night</a>
+								</h2>
+							</div><!-- end entry-header -->
+							<div class="entry-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							</div><!-- entry-content -->
+						</div><!-- end inner -->
+					</div><!-- end column -->
 
-			{% include scripts.html %}
+					<div class="col-sm-4">
+						<div class="inner">
+							<figure class="w-thumb">
+								<img src="/assets/imagescontent/recipe-2.jpg" alt="">
+							</figure>
+							<div class="entry-header">
+								<time class="published" datetime="2015-02-19" title="">February 19, 2015</time>
+								<h2 class="post-title entry-title">
+									<a href="#">The Best Recipe Ever</a>
+								</h2>
+							</div><!-- end entry-header -->
+							<div class="entry-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							</div><!-- entry-content -->
+						</div><!-- end inner -->
+					</div><!-- end column -->
 
-	</body>
-	<script>
-		$(document).ready(function() {
-			$('.slides').slick({
-				autoplay: true,
-				fade: true
-			})
-		})
-	</script>
+					<div class="col-sm-4">
+						<div class="inner">
+							<figure class="w-thumb">
+								<img src="images/content/recipe-3.jpg" alt="">
+							</figure>
+							<div class="entry-header">
+								<time class="published" datetime="2015-02-15" title="">February 15, 2015</time>
+								<h2 class="post-title entry-title">
+									<a href="#">A Delicious Drink</a>
+								</h2>
+							</div><!-- end entry-header -->
+							<div class="entry-content">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhona euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+							</div><!-- entry-content -->
+						</div><!-- end inner -->
+					</div><!-- end column -->
+
+				</div><!-- end row -->
+			</div>
+		</section><!-- end blog -->
+
+		<div class="testimonial">
+			<div class="container">
+				<div class="row">
+					<div id="testimonial-home" class="carousel slide">
+						<ol class="carousel-indicators">
+	                        <li data-target="#testimonial-home" data-slide-to="0" class="active"></li>
+	                        <li data-target="#testimonial-home" data-slide-to="1" class=""></li>
+	                        <li data-target="#testimonial-home" data-slide-to="2" class=""></li>
+	                    </ol>
+
+	                    <div class="carousel-inner">
+
+	                    	<div class="item active">
+	                    		<div class="context">
+	                    			<div class="inner">
+		                    			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+		                    			<p class="who">Mark Elmett, Founder @ Mountain People</p>
+	                    			</div>
+	                    		</div>
+	                    	</div><!-- end item -->
+
+	                    	<div class="item">
+	                    		<div class="context">
+	                    			<div class="inner">
+		                    			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+		                    			<p class="who">Mark Elmett, Founder @ Mountain People</p>
+		                    		</div>
+	                    		</div>
+	                    	</div><!-- end item -->
+
+	                    	<div class="item">
+	                    		<div class="context">
+	                    			<div class="inner">
+		                    			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
+		                    			<p class="who">Mark Elmett, Founder @ Mountain People</p>
+		                    		</div>
+	                    		</div>
+	                    	</div><!-- end item -->
+
+	                    </div><!-- end carousel-inner -->
+
+	                    <a class="left carousel-control" href="#testimonial-home" role="button" data-slide="prev">
+							<span class="fa fa-fw fa-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#testimonial-home" role="button" data-slide="next">
+						    <span class="fa fa-fw fa-chevron-right"></span>
+						</a>
+
+					</div><!-- end carousel -->
+				</div><!-- end row -->
+			</div>
+		</div><!-- end testimonial -->
+
+    {% include footer.html %}
+
+    </div><!-- end #page hfeed site -->
+
+    {% include scripts.html %}
+
+  </body>
 </html>

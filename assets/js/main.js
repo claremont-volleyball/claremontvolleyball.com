@@ -1,93 +1,95 @@
-/*
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
-	skel
-		.breakpoints({
-			desktop: '(min-width: 737px)',
-			tablet: '(min-width: 737px) and (max-width: 1200px)',
-			mobile: '(max-width: 736px)'
-		})
-		.viewport({
-			breakpoints: {
-				tablet: {
-					width: 1080
-				}
-			}
+	'use strict';
+
+	$(document).ready(function(){
+		// SUBMENU ARROW
+		$('.site-navigation li:has(ul)').addClass('has-child');
+
+		// SPLIT WORDS
+		$('.home-title, .widget-title').splitWords(1);
+
+		// MASONRY
+		$('#masonry').masonry({
+			columnWidth: 585,
+			itemSelector:'.tbox'
 		});
 
-	$(function() {
+		$('.griddy').masonry({
+			columnWidth: 390,
+			itemSelector:'.post'
+		});
 
-		var	$window = $(window),
-			$body = $('body');
-
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
+		// EQUAL HEIGHT
+		function equalHeight(group) {
+			var tallest = 0;
+			group.each(function() {
+				var thisHeight = $(this).height();
+				if(thisHeight > tallest) {
+					tallest = thisHeight;
+				}
 			});
-
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Dropdowns.
-			$('#nav > ul').dropotron({
-				offsetY: -22,
-				mode: 'fade',
-				noOpenerFade: true,
-				speed: 300,
-				detach: false
-			});
-
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
-				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
-				);
-			});
-
-		// Off-Canvas Navigation.
-
-			// Title Bar.
-				$(
-					'<div id="titleBar">' +
-						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title">' + $('#logo').html() + '</span>' +
-					'</div>'
-				)
-					.appendTo($body);
-
-			// Navigation Panel.
-				$(
-					'<div id="navPanel">' +
-						'<nav>' +
-							$('#nav').navList() +
-						'</nav>' +
-					'</div>'
-				)
-					.appendTo($body)
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'navPanel-visible'
-					});
-
-			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
-				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#titleBar, #navPanel, #page-wrapper')
-						.css('transition', 'none');
+			group.height(tallest);
+		}
+		
+		equalHeight($(".col-service"));
 
 	});
 
-})(jQuery);
+	$(window).load(function(){
+
+		// PRELOADER
+		$('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+		// Container
+		var $container = $('#foliowrap');
+		$container.isotope({
+			filter:'*',
+			animationOptions: {
+				duration: 750,
+				easing: 'linear',
+				queue: false,
+			}
+		});
+
+		// Isotope Button
+		$('#options li a').click(function(){
+			var selector = $(this).attr('data-filter');
+			$container.isotope({
+				filter:selector,
+				animationOptions: {
+					duration: 750,
+					easing: 'linear',
+					queue: false,
+				}
+			});
+			return false;
+		});
+
+		var $optionSets = $('#options'),
+			$optionLinks = $optionSets.find('a');
+
+			$optionLinks.click(function(){
+				var $this = $(this);
+				// don't proceed if already selected
+				if ($this.hasClass('selected')) {
+					return false;
+				}
+				var $optionSet = $this.parents('#options');
+				$optionSet.find('.selected').removeClass('selected');
+				$this.addClass('selected'); 
+			});
+
+		// MENU SCROLL
+		$(window).scroll(function () {
+			var $this = $(this);
+			if ($this.scrollTop() > 240) {
+				$('body').addClass('scroll-run');
+			} else if($this.scrollTop() < 240){
+				$('body').removeClass('scroll-run');
+			}
+			delete $this.this;
+		});
+	});
+
+})( jQuery );
