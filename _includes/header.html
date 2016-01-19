@@ -1,55 +1,73 @@
-<header id="header">
-  <div class="inner">
+<header id="masthead" class="site-header navbar-fixed-top">
+  <div class="header-navigation">
+    <div class="container-fluid">
+      <div class="row">
 
-    <!-- Logo -->
-      <h1><a href="/" id="logo"><span class="claremont">Claremont</span> Volleyball</a></h1>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-navigation" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-    <!-- Nav -->
-      <nav id="nav">
-        <ul>
-          <li
-            {% if page.url == '/index.html' %}
-              class="current_page_item"
-            {% endif %}>
-          <a href="/">Home</a></li>
-          <li
-            {% if page.url == "/mens/index.html" %}
-              {{ page.url }}
-              class="current_page_item"
-            {% endif %}>
-            <a href="/mens">Men's</a>
-            <ul>
-              <li><a href="/mens">Home</a></li>
-              <li><a href="#">Roster</a></li>
-              <li><a href="#">Photos</a></li>
-              <li><a href="#">Video</a></li>
+        <div class="logo navbar-brand">
+        <a href="#">
+          <img src="/assets/images/header-logo.png" alt="">
+        </a>
+        </div><!-- end logo -->
+
+        <nav id="primary-navigation" class="site-navigation navbar-collapse collapse" role="navigation">
+          <div class="nav-menu">
+            <ul class="menu">
+              <li
+                {% if page.url == '/index.html' %}
+                  class="active"
+                {% endif %}>
+              <a href="/">Home</a></li>
+              <li
+                {% if page.url == "/mens/index.html" %}
+                  {{ page.url }}
+                  class="active"
+                {% endif %}>
+                <a href="/mens">Men's</a>
+                <ul>
+                  <li><a href="/mens">Home</a></li>
+                  <li><a href="#">Roster</a></li>
+                  <li><a href="#">Photos</a></li>
+                  <li><a href="#">Video</a></li>
+                </ul>
+              </li>
+              <li
+              {% if page.url == "/womens/index.html" %}
+                {{ page.url }}
+                class="active"
+              {% endif %}>
+                <a href="#">Women's</a>
+                <ul>
+                  <li><a href="womens/index.html">Home</a></li>
+                  <li><a href="#">Roster</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Video</a></li>
+                </ul>
+              </li>
+              <li
+              {% if page.url == "/calendar/index.html" %}
+                {{ page.url }}
+                class="active"
+              {% endif %}><a href="/calendar">Calendar</a></li>
+              <li
+              {% if page.url == "/directions/index.html" %}
+                {{ page.url }}
+                class="active"
+              {% endif %}><a href="/directions">Directions</a></li>
             </ul>
-          </li>
-          <li
-          {% if page.url == "/womens/index.html" %}
-            {{ page.url }}
-            class="current_page_item"
-          {% endif %}>
-            <a href="#">Women's</a>
-            <ul>
-              <li><a href="womens/index.html">Home</a></li>
-              <li><a href="#">Roster</a></li>
-              <li><a href="#">Schedule</a></li>
-              <li><a href="#">Video</a></li>
-            </ul>
-          </li>
-          <li
-          {% if page.url == "/calendar/index.html" %}
-            {{ page.url }}
-            class="current_page_item"
-          {% endif %}><a href="/calendar">Calendar</a></li>
-          <li
-          {% if page.url == "/directions/index.html" %}
-            {{ page.url }}
-            class="current_page_item"
-          {% endif %}><a href="/directions">Directions</a></li>
-        </ul>
-      </nav>
+          </div><!-- end nav-menu -->
+        </nav><!-- primary-navigation -->
 
-  </div>
-</header>
+        <div class="header-feature">
+          <a href="contact.html" class="btn btn-lg btn-default">Hawt</a>
+        </div><!-- end header-feature -->
+      </div><!-- end row -->
+    </div><!-- end container-fluid -->
+  </div><!-- end header-navigation -->
+</header><!-- end #masthead -->
