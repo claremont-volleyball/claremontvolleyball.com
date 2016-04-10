@@ -5981,7 +5981,7 @@ button.close {
 }
 /* ====== HEADER SECTION ======= */
 .site-header {
-  background-color: #423329;
+  background-color: #3368b8;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -6164,7 +6164,7 @@ button.close {
 }
 
 .home-service {
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
   border-bottom: 1px solid #5d402d;
   padding: 80px 0;
@@ -6227,7 +6227,7 @@ button.close {
 }
 
 .home-about {
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
   border-bottom: 0;
 }
@@ -6323,11 +6323,11 @@ ul#options li a {
   transition: all 0.3s ease-in-out;
 }
 ul#options li a.selected {
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
 }
 ul#options li a:hover {
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
   text-decoration: none;
 }
@@ -6477,7 +6477,7 @@ ul#options li a:active {
 }
 
 .contact-hero {
-  background-color: #423329;
+  background-color: #3368b8;
   padding: 60px 40px;
   color: #fff;
   margin-bottom: 30px;
@@ -6504,7 +6504,7 @@ ul#options li a:active {
   text-transform: uppercase;
   font-size: 18px;
   margin: 0;
-  color: #423329;
+  color: #3368b8;
   margin-bottom: 50px;
 }
 .home-title .wrap-1, .widget-title .wrap-1 {
@@ -6550,7 +6550,7 @@ ul#options li a:active {
 
 .testimonial {
   padding: 120px 0;
-  background: #423329 url('../images/content/testimonials.jpg') no-repeat 0 0;
+  background: #3368b8 url('../images/content/testimonials.jpg') no-repeat 0 0;
   background-size: cover;
 }
 .testimonial .ava {
@@ -6651,7 +6651,7 @@ img {
 
 .footer-credit {
   padding: 70px 0;
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
   text-align: center;
 }
@@ -6829,16 +6829,16 @@ img {
 .pricing.starter {
   color: #fff;
   background-color: #e5b700;
-  border-color: #423329;
+  border-color: #3368b8;
 }
 .pricing.starter .pricing-header:before {
   background-color: #fff;
 }
 .pricing.starter .cost, .pricing.starter .year {
-  color: #423329;
+  color: #3368b8;
 }
 .pricing.starter:hover {
-  border-color: #423329;
+  border-color: #3368b8;
 }
 .pricing.starter .pricing-body ul li:first-child {
   background-color: #c3a8d0;
@@ -6924,7 +6924,7 @@ img {
 .content-area .context .who {
   font-size: 12px;
   font-weight: 700;
-  color: #423329;
+  color: #3368b8;
 }
 
 .fullwidth {
@@ -7030,7 +7030,7 @@ img {
   padding: 0px;
 }
 .post.format-quote blockquote, .format-quote.search-result blockquote {
-  background-color: #423329;
+  background-color: #3368b8;
   color: #fff;
   font-style: italic;
   padding: 30px;
