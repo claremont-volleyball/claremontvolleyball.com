@@ -7,10 +7,10 @@
     <title>Claremont Volleyball - Coming Soon Page</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
@@ -109,26 +109,38 @@
             <p>If you have any more questions about our season, the team, or how to join, please don't hesitate to check out our page or email us directly. We would love for you to join us on our march to a national championship!</p>
           </div>
         </div>
-        <div class="row" data-scroll-reveal="enter from top after 1s">
-          <div class="col-md-3 col-md-offset-3 col-xs-12">
-            <div class="form-group">
-              <input type="text" class="form-control input-lg" id="inputName" placeholder="Name" onkeydown="Javascript:checkName();">
+        <form action="https://formspree.io/info@claremontvolleyball.com" method="POST">
+            <div class="row" data-scroll-reveal="enter from top after 1s">
+              <div class="col-md-3 col-md-offset-3 col-xs-12">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control input-lg" id="inputName" placeholder="Name" onkeydown="Javascript:checkName();">
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control input-lg" id="inputEmail" placeholder="E-mail" onkeydown="Javascript:checkEmail();">
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <div class="form-group">
-              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="E-mail" onkeydown="Javascript:checkEmail();">
+            <div class="row" data-scroll-reveal="enter from top after 1.25s">
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" name="_subject" class="form-control input-lg" placeholder="Subject">
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row" data-scroll-reveal="enter from top after 1.25s">
-          <div class="col-md-6 col-md-offset-3 col-xs-12">
-            <div class="form-group">
-              <textarea class="form-control input-lg" id="inputMessage" rows="3" placeholder="Message" onkeydown="Javascript:checkMessage();"></textarea>
+            <div class="row" data-scroll-reveal="enter from top after 1.25s">
+              <div class="col-md-6 col-md-offset-3 col-xs-12">
+                <div class="form-group">
+                  <textarea name="message" class="form-control input-lg" id="inputMessage" rows="3" placeholder="Message" onkeydown="Javascript:checkMessage();"></textarea>
+                </div>
+                <!--  hidden -->
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="/contact" />
+                <button type="submit" class="button hvr-float submit" onmouseover="Javascript:checkForm();" data-scroll-reveal="enter from top after 1.5s">Submit</button>
+              </div>
             </div>
-            <button type="submit" class="button hvr-float submit" onmouseover="Javascript:checkForm();" onclick="Javascript:mail();" data-scroll-reveal="enter from top after 1.5s">Submit</button>
-          </div>
-        </div>
+        </form>
         <div class="row">
           <div class="mail-response">&nbsp;</div>
           <div class="back-to-top"><a href="#intro" class="button">Back to top</a></div>

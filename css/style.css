@@ -359,6 +359,12 @@ footer {
 .kangaroo-pass {
     height: 150px;
 }
+.kangaroo-set {
+    height: 250px;
+}
+.button-contact-success {
+    margin: 15px auto 0 auto;
+}
 
 ::selection {
   background: #faa41b; /* WebKit/Blink Browsers */
@@ -366,4 +372,19 @@ footer {
 }
 ::-moz-selection {
   background: #faa41b; /* Gecko Browsers */
+}
+#contact-body-success {
+    background-color: #111;
+}
+/* CONTACT */
+
+#contact-success {
+	background-color: #111;
+	padding-top: 25px;
+	color: white;
+}
+
+#contact-success .button {
+	border-color: white;
+	color: white;
 }
