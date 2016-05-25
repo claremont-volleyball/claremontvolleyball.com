@@ -362,7 +362,11 @@ footer {
 
 ::selection {
   background: #faa41b; /* WebKit/Blink Browsers */
+    
 }
 ::-moz-selection {
   background: #faa41b; /* Gecko Browsers */
+}
+html {
+    -webkit-tap-highlight-color: #faa41b;
 }
