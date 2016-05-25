@@ -1,83 +1,166 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Claremont Volleyball</title>
+    <title>Claremont Volleyball - Coming Soon Page</title>
 
     <!-- Bootstrap -->
-    <link href="/assets/css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- Main CSS -->
+    <link href="css/style-2.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <!-- Intro -->
+    <header id="intro">
+      <div class="parallax"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="logo" src="images/claremont-logo.png" alt="Claremont Volleyball"/>
+            <h1><span>COMING </span>SOON</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="countdown">
+              <div class="counter" id="days" data-scroll-reveal="wait 1.0s">
+                <div class="days">&nbsp;</div>
+                <span class="info">days</span>
+              </div>
+              <div class="counter" id="hours" data-scroll-reveal="wait 1.25s">
+                <div class="hours">&nbsp;</div>
+                <span class="info">hours</span>
+              </div>
+              <div class="counter" id="minutes" data-scroll-reveal="wait 1.5s">
+                <div class="minutes">&nbsp;</div>
+                <span class="info">minutes</span>
+              </div>
+              <div class="counter" id="seconds" data-scroll-reveal="wait 1.75s">
+                <div class="seconds">&nbsp;</div>
+                <span class="info">seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#about" class="button intro hvr-float" data-scroll-reveal="wait 2.25s">About</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Intro -->
+
+    <!-- About -->
+      <section id="about" style="background: #ffffff; z-index: 999;">
+        <div class="container-fluid" data-scroll-reveal="">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <img src="images/usa-ball.png" class="img usa-volleyball"></i>
+              <h2>About us</h2>
+              <p>The Claremont Men's Volleyball team is a division II club team that competes in regional and national tournaments. We are currently the reigning champions of the Southern California Collegiate Volleyball League (SCCVL) and we will begin our title defense in January. The team is open to students from any of the Claremont Colleges (including CGU) and we pride ourselves on offering a high level of play to interested players.</p>
+              <p>The goal of the team is to provide men at the Claremont Colleges an opportunity to play volleyball in a competitive league against other colleges and universities, while still maintaining a fun, positive atmosphere. Practices are typically 2-3 times per week in the evenings or Sunday afternoons and we try to collaborate with the women's team for beach volleyball days on Friday afternoons.</p>
+              <p>Our league season is in the Spring semester and ends with a national tournament in April, though we typically hold open-gym practices in the fall, before deciding on a roster at some point in November. Anyone is welcome to join the open practices in September and October, and once we have decided on practice times, we will post them here.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="person col-lg-2 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter right and move 50px over 1.75s">
+              <img src="images/captain1.png" alt="Your Name" class="hvr-float img-responsive">
+              <h3 data-scroll-reveal="enter from top after 1.5s"><span></span> Captain</h3>
+<!--              <span data-scroll-reveal="enter from top after 2s">co-founder</span>-->
+            </div>
+            <div class="person col-lg-2 col-md-4 col-sm-4 col-xs-12">
+              <img src="images/captain2.png" alt="Your Name" class="hvr-float img-responsive">
+              <div>
+              <h3 data-scroll-reveal="enter from top after 1.5s">Captain</h3>
+<!--              <span data-scroll-reveal="enter from top after 2s">co-founder</span>-->
+              </div>
+            </div>
+            <div class="person col-lg-2 col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter left and move 50px over 1.75s">
+              <img src="images/captain3.png" alt="Your Name" class="hvr-float img-responsive">
+              <h3 data-scroll-reveal="enter from top after 1.5s"><span></span>Captain</h3>
+<!--              <span data-scroll-reveal="enter from top after 2s">intern</span>-->
+            </div>
+          </div>
+          <div class="row">
+            <a href="#contact" class="button hvr-float" data-scroll-reveal="wait 2.5s">Contact</a>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row" data-scroll-reveal="">
+          <div class="col-md-6 col-md-offset-3">
+            <i class="fa fa-map-marker fa-4x"></i>
+            <h2>Contact</h2>
+            <p>If you have any more questions about our season, the team, or how to join, please don't hesitate to check out our page or email us directly. We would love for you to join us on our march to a national championship!</p>
+          </div>
+        </div>
+        <div class="row" data-scroll-reveal="enter from top after 1s">
+          <div class="col-md-3 col-md-offset-3 col-xs-12">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" id="inputName" placeholder="Name" onkeydown="Javascript:checkName();">
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+              <input type="email" class="form-control input-lg" id="inputEmail" placeholder="E-mail" onkeydown="Javascript:checkEmail();">
+            </div>
+          </div>
+        </div>
+        <div class="row" data-scroll-reveal="enter from top after 1.25s">
+          <div class="col-md-6 col-md-offset-3 col-xs-12">
+            <div class="form-group">
+              <textarea class="form-control input-lg" id="inputMessage" rows="3" placeholder="Message" onkeydown="Javascript:checkMessage();"></textarea>
+            </div>
+            <button type="submit" class="button hvr-float submit" onmouseover="Javascript:checkForm();" onclick="Javascript:mail();" data-scroll-reveal="enter from top after 1.75s">Submit</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="mail-response">&nbsp;</div>
+          <div class="back-to-top"><a href="#intro" class="button">Back to top</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="row" data-scroll-reveal="wait 2.25s">
+        <div class="copyright">
+          <p>2016 © Claremont Volleyball</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Javascript Files -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src='js/scrollReveal.js'></script>
+    <script src="js/jquery-ui-1.10.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+    <script src='js/jquery-scrollto.js'></script>
+    <script src="js/countdown.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="js/html5shiv-3.7.0.min.js"></script>
+      <script src="js/respond-1.4.2.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-
-    <div id="page" class="hfeed site"><!-- start page wrapper -->
-
-      {% include header.html %}
-
-    	<div id="preloader"></div>
-
-		<!-- CAROUSEL SECTION -->
-    	<div id="carousel-home" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-		    	<li data-target="#carousel-home" data-slide-to="1"></li>
-		    	<li data-target="#carousel-home" data-slide-to="2"></li>
-		  	</ol>
-
-		  	<!-- Wrapper for slides -->
-		  	<div class="carousel-inner">
-		    	<div class="item active">
-		      		<img src="/assets/images/mens/earl-spike.jpg" alt="">
-		      		<div class="carousel-caption">
-		      			<h3>Welcome to Claremont Volleyball</h3>
-		      			<a href="menu.html" class="btn btn-sm btn-default">Our Menu <i class="fa fa-fw fa-long-arrow-right"></i></a>
-		      		</div>
-		    	</div>
-
-			    <div class="item">
-			      	<img src="/assets/images/womens/madison-spike.png" alt="">
-			      	<div class="carousel-caption">
-			      		<h3>Chef's Specials</h3>
-			      		<a href="menu.html" class="btn btn-sm btn-default">Click Here <i class="fa fa-fw fa-long-arrow-right"></i></a>
-			      	</div>
-			    </div>
-			    <div class="item">
-			      	<img src="/assets/images/mens/nationals-team.jpg" alt="">
-			      	<div class="carousel-caption">
-			      		<h3>Our Recipes</h3>
-			      		<a href="recipes.html" class="btn btn-sm btn-default">See All <i class="fa fa-fw fa-long-arrow-right"></i></a>
-			      	</div>
-			    </div>
-			</div><!-- end carousel inner -->
-
-			<!-- Controls -->
-
-			<a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
-				<span class="fa fa-fw fa-chevron-left"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
-			    <span class="fa fa-fw fa-chevron-right"></span>
-			</a>
-
-		</div> <!-- Carousel -->
-
-
-    {% include footer.html %}
-
-    </div><!-- end #page hfeed site -->
-
-    {% include scripts.html %}
-
   </body>
 </html>
