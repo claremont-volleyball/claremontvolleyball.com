@@ -64,7 +64,7 @@ h6 {
 	border: 1px solid #000000;
 	color: #000000;
 	display: block;
-	border-radius: 0px;
+	border-radius: 10px;
 	height: 50px;
 	line-height: 3em;
 	margin: 50px auto 0 auto;
@@ -147,7 +147,7 @@ h6 {
 
 .counter {
 	border: 1px solid #fff;
-	border-radius: 50%;
+	border-radius: 10%;
 	float: left;
 	height: 160px;
 	margin: 0 10px;
@@ -158,8 +158,6 @@ h6 {
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
-	background: #000;
-	border-color: #000;
 }
 
 .counter:hover {
@@ -168,9 +166,9 @@ h6 {
 	-ms-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;	
-	background: #3dc275;
-	border-color: #3dc275;
-	color: #fff;
+	background: #faa41b;
+	border-color: #faa41b;
+	color: #000;
 }
 
 .days,
@@ -190,17 +188,16 @@ h6 {
 }
 
 .intro.button {
-	border: 1px solid #000;
+	border: 1px solid #ffffff;
 	color: #ffffff;
-	background: #000;
 }
 .intro.button:hover {
 	color: #ffffff;
 }
 
 img.logo {
-	margin-bottom: 70px;
-	width: 200px;
+	margin-bottom: 30px;
+	width: 400px;
 }
 .logo {
 	width: 340px;
@@ -208,7 +205,7 @@ img.logo {
 }
 
 .parallax {
-	background: url('../images/bg5.jpg');
+	background: url('../images/claremont-spike.png');
 	
 	background-position: center; 
 	background-repeat: repeat;
@@ -239,7 +236,7 @@ img.logo {
 
 /* it's necessary for mobile devices */
 .video-background {
-	background: url('../images/bg3.jpg');
+	background: url('../images/bg.jpg');
 	background-position: center; 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -256,7 +253,7 @@ img.logo {
 
 .person img {
 	margin: 0 auto;
-	border-radius: 0%;
+	border-radius: 10%;
 }
 
 #about .button {
@@ -267,7 +264,7 @@ img.logo {
 
 #contact {
 	background-color: #111;
-	padding-top: 150px;
+	padding-top: 100px;
 	color: white;
 }
 
@@ -282,10 +279,11 @@ img.logo {
 
 .form-control {
 	background: rgba(255, 255, 255, 0.05);
-	border: 1px solid #fff;
-	border-radius: 0px;
+	border: 1px solid #faa41b;
+	border-radius: 10px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
+    color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -310,6 +308,9 @@ img.logo {
   	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(4, 115, 136, 0.6);
   	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(4, 115, 136, 0.6);
 }
+.form-control input, select, textarea {
+    color: white;
+}
 
 
 /* Footer */
@@ -331,6 +332,37 @@ footer {
 	.person {
 		margin-bottom: 40px;
 	}
+    img.logo {
+        width: 250px;
+    }
+    
+    .parallax {
+	background: url('../images/claremont-spike.png');
+	
+	background-position: -140px 8px; 
+	background-repeat: repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 600px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -999;
+}
 }
 
 
+/* New classes and IDs */
+.usa-volleyball {
+    width: 75px;
+}
+.kangaroo-pass {
+    height: 150px;
+}
+
+::selection {
+  background: #faa41b; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #faa41b; /* Gecko Browsers */
+}
