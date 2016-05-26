@@ -2,8 +2,8 @@ var slantAngle = 5;	// Angle in degrees
 
 /* Event time */
 var year 	= 2016;
-var month 	= 7;
-var day 	= 4;
+var month 	= 9;
+var day 	= 1;
 var hour 	= 0;
 var minute 	= 0;
 var second 	= 0;
