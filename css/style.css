@@ -388,3 +388,38 @@ footer {
 	border-color: white;
 	color: white;
 }
+
+.college {
+    padding: 0 5px 0 5px;
+}
+
+/* Responsive custom elements for college images*/
+@media (min-width: 1200px) {
+    .college img {
+        width: 100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) { 
+    .college img {
+        width: 95px;
+    }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+    .college img {
+        width: 90px;
+    }
+}
+@media (min-width: 475px) and (max-width: 600px) {
+    .college img {
+        width: 70px;
+    }
+}
+@media (max-width: 474px) {
+    .college img {
+        width: 60px;
+    }
+    .college {
+        padding: 0 2px 0 2px;
+    }
+}
+
