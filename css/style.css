@@ -392,16 +392,35 @@ footer {
 .college {
     padding: 0 5px 0 5px;
 }
+#colleges {
+    margin-bottom: 35px;
+}
 
 /* Responsive custom elements for college images*/
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
     .college img {
         width: 100px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px) { 
+@media (min-width: 1106px) and (max-width: 1149px) { 
     .college img {
-        width: 95px;
+        width: 90px;
+    }
+    .college {
+        padding: 0 10px 0 10px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1105px) { 
+    .college img {
+        width: 75px;
+    }
+    .college {
+        padding: 0 10px 0 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 990px) { 
+    .college img {
+        width: 105px;
     }
 }
 @media (min-width: 601px) and (max-width: 767px) {
