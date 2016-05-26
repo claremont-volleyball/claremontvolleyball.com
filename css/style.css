@@ -435,10 +435,10 @@ footer {
 }
 @media (max-width: 474px) {
     .college img {
-        width: 60px;
+        width: 55px;
     }
     .college {
-        padding: 0 2px 0 2px;
+        padding: 0 1px 0 1px;
     }
 }
 
