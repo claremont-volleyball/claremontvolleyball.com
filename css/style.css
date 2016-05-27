@@ -442,3 +442,7 @@ footer {
     }
 }
 
+.bg-holder {
+    height: 100%;
+    width: 100%;
+}

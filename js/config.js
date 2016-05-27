@@ -9,7 +9,3 @@ var minute 	= 0;
 var second 	= 0;
 
 var finishText 	= "Claremont Volleyball will be live soon."	// Show this text when event time will come
-
-/* Google Analytics */
-googleAnalyticsId = "UA-73487215-1"; 	// Google Analytics ID - e.g. UA-12345678-90
-googleAnalyticsUrl = "www.claremontvolleyball.com"; 	// Your domain name – e.g. yourdomain.com

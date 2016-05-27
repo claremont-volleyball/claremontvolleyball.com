@@ -17,10 +17,10 @@ window.onresize = function(event) {
     slant();
 };
 
-$(window).scroll(function(e){
-	if(window.isMobile) return;
-   	parallax();
-});
+//$(window).scroll(function(e){
+//	if(window.isMobile) return;
+//   	parallax();
+//});
 
 
 /*! Check it is mobile */
@@ -48,15 +48,9 @@ function slant(){
 
 
 /*! Parallax effect in intro section */
-// PARALLAX
-function parallax(){
-    $('*[class^="parallax"]').each(function(r){
-        var pos = $(this).offset().top;
-        var scrolled = $(window).scrollTop();
-        $('.parallax').css('top', +(scrolled * 0.5) + 'px');      
-    });
-};
-
+$('.bg-holder').parallaxScroll({
+  friction: 0.4
+});
 
 /*! Contact form */
 function checkForm() {
