@@ -48,6 +48,7 @@ function slant(){
 
 
 /*! Parallax effect in intro section */
+// PARALLAX
 function parallax(){
     $('*[class^="parallax"]').each(function(r){
         var pos = $(this).offset().top;
@@ -69,12 +70,11 @@ function checkName() {
 
    	setTimeout(function() {
     	if (name.value.length < 3) {
-	    	$(name).parent().removeClass("has-success");
 	    	$(name).parent().addClass('has-error has-feedback');
 	    	inputName = '';
 	    } else {
 	    	$(name).parent().removeClass("has-error");
-	    	$(name).parent().addClass('has-success has-feedback');
+	    	$(name).parent().addClass('has-feedback');
 	    	inputName = name.value;
 	    }
    	}, 500);
@@ -106,7 +106,6 @@ function checkEmail() {
 
     setTimeout(function() {
 		if (email.value == '') {
-			$(email).parent().removeClass("has-success");
 			$(email).parent().addClass('has-error has-feedback');
 			inputEmail = '';
 		} else {
@@ -116,7 +115,7 @@ function checkEmail() {
 	    		inputEmail = '';
 			} else {
 	    		$(email).parent().removeClass("has-error");
-	    		$(email).parent().addClass('has-success has-feedback');
+	    		$(email).parent().addClass('has-feedback');
 	    		inputEmail = email.value;
 	    	}
 		}
@@ -146,13 +145,3 @@ function mail() {
 		$('#inputMessage').parent().effect('shake');
 	}
 }
-
-
-/*! Google Analytics */
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-15035018-34', 'auto');
-ga('send', 'pageview');
