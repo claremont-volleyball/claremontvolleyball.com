@@ -412,7 +412,7 @@ footer {
 }
 @media (min-width: 991px) and (max-width: 1105px) { 
     .college img {
-        width: 75px;
+        width: 80px;
     }
     .college {
         padding: 0 10px 0 10px;
@@ -425,17 +425,17 @@ footer {
 }
 @media (min-width: 601px) and (max-width: 767px) {
     .college img {
-        width: 90px;
+        width: 130px;
     }
 }
 @media (min-width: 475px) and (max-width: 600px) {
     .college img {
-        width: 70px;
+        width: 125px;
     }
 }
 @media (max-width: 474px) {
     .college img {
-        width: 45px;
+        width: 85px;
     }
     .college {
         padding: 0 1px 0 1px;
@@ -445,4 +445,23 @@ footer {
 .bg-holder {
     height: 100%;
     width: 100%;
+}
+#about1 {
+    border-radius: 25px;
+    border: 2px solid #faa41b;
+    padding: 20px; 
+}
+#about1:hover {
+    background-color: rgb(245, 245, 245);
+}
+.about-show {
+    display: none;
+}
+
+.blink {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
 }

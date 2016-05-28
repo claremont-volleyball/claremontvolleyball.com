@@ -94,48 +94,21 @@ function checkMessage() {
     return inputMessage;
 };
 
-function checkEmail() {
-	var email = document.getElementById('inputEmail');
-	var emailFilter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})/;
+var aboutSlide = 0;
 
-    setTimeout(function() {
-		if (email.value == '') {
-			$(email).parent().addClass('has-error has-feedback');
-			inputEmail = '';
-		} else {
-	    	if (!emailFilter.test(email.value)) {
-	    		$(email).parent().removeClass("has-success");
-	    		$(email).parent().addClass('has-error has-feedback');
-	    		inputEmail = '';
-			} else {
-	    		$(email).parent().removeClass("has-error");
-	    		$(email).parent().addClass('has-feedback');
-	    		inputEmail = email.value;
-	    	}
-		}
-    }, 500);
-
-    return inputEmail;
-};
-
-function mail() {
-	name = checkName();
-	message = checkMessage();
-	email = checkEmail();
-
-	if (name != '' && message != '' && email != '') {
-		$.post('php/mail.php', {name: name, message: message, email: email},
-			function(data) {
-				$('.submit').fadeOut("slow");
-				$('.mail-response').fadeIn("slow").html('<span>' + data + '</span>');
-				$('.back-to-top').fadeIn("slow");
-			}
-		);
-	} else if (name == '') {
-		$('#inputName').parent().effect('shake');
-	} else if (email == '') {
-		$('#inputEmail').parent().effect('shake');
-	} else if (message == '') {
-		$('#inputMessage').parent().effect('shake');
-	}
-}
+$( "#about1" ).click(function() {
+    if (aboutSlide == 1) {
+      $(".about-show").slideUp("fast", function() { 
+          aboutSlide = 0;
+      });
+      $(" .scroll ").removeClass("fa fa-chevron-circle-up");
+      $(" .scroll ").addClass("blink fa fa-chevron-circle-down");
+    } 
+    else {
+      $( ".about-show" ).slideDown( "slow", function() {
+         aboutSlide = 1;
+      });
+      $(" .scroll ").removeClass("blink fa fa-chevron-circle-down");
+      $(" .scroll ").addClass("fa fa-chevron-circle-up");
+    }    
+});
