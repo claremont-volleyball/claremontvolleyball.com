@@ -103,6 +103,7 @@ $( "#about1" ).click(function() {
       });
       $(" .scroll ").removeClass("fa fa-chevron-circle-up");
       $(" .scroll ").addClass("blink fa fa-chevron-circle-down");
+      $(" .about-border ").addClass("about-hover");
     } 
     else {
       $( ".about-show" ).slideDown( "slow", function() {
@@ -110,5 +111,6 @@ $( "#about1" ).click(function() {
       });
       $(" .scroll ").removeClass("blink fa fa-chevron-circle-down");
       $(" .scroll ").addClass("fa fa-chevron-circle-up");
+      $(" .about-border").removeClass("about-hover");
     }    
 });

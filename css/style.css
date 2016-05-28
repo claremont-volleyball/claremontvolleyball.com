@@ -447,13 +447,13 @@ footer {
     height: 100%;
     width: 100%;
 }
-#about1 {
+.about-hover:hover {
+    background-color: rgb(245, 245, 245);
+}
+.about-border {
     border-radius: 25px;
     border: 2px solid #faa41b;
     padding: 20px; 
-}
-#about1:hover {
-    background-color: rgb(245, 245, 245);
 }
 .about-show {
     display: none;
@@ -474,4 +474,9 @@ footer {
     font-size: 2em;
     margin-bottom: 40px;
     margin-top: 0;
+}
+
+.smol-text {
+    font-size: 1em;
+    margin: 0 0 0 0;
 }
