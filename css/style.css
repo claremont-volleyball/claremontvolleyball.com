@@ -458,10 +458,19 @@ footer {
     display: none;
 }
 
+/* Blinking animation for icon on about text */
 .blink {
   animation: blinker 3s linear infinite;
 }
 
 @keyframes blinker {  
   50% { opacity: 0.0; }
+}
+
+/* h1 edit for captain section */
+
+.captain-head {
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
