@@ -494,3 +494,16 @@ footer {
 .table>tbody>tr.even {
     background-color: #dadada;
 }
+/* Calendar */
+.fc-event-container .mens-event { 
+    background-color: #faa41b;
+    border: 1px solid #faa41b;
+}
+.fc-event-container .main-event { 
+    background-color: #faa41b;
+    border: 1px solid #faa41b;
+}
+.fc-event-container .womens-event {
+    background-color: rgb(52, 116, 92);
+    border: 1px solid rgb(52, 116, 92);
+}

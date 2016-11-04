@@ -1,3 +1,48 @@
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        googleCalendarApiKey: 'AIzaSyAtjZjj7GPuTF57cv2grSbWJS9GytVMrUU',
+        header: {
+			left: 'prev,next today',
+			center: 'title',
+			right: 'month,agendaWeek,agendaDay,listWeek'
+		},
+        width: "parent",
+        eventSources: [
+            {
+                googleCalendarId: 'f9ac2js6c7uaio13okgmneh3d4@group.calendar.google.com', // main calendar
+                className: 'main-event'
+            },
+            {
+                googleCalendarId: '5c8jnapi4jgo1om1220mrpk96c@group.calendar.google.com', // men's
+                className: 'mens-event'
+            },
+            {
+                googleCalendarId: '3fu2akujc2gh3dirmoe69j7kqs@group.calendar.google.com',
+                className: 'womens-event'
+            },
+            {
+                googleCalendarId: 'm3m6d0voiji08c02v0hqjp4i04@group.calendar.google.com',
+                className: 'beach-event'
+            }
+        ],
+        eventRender: function(event, element, view) {
+            if (event.description != null) {
+                element.qtip({
+                    content: event.title + " at <strong>" + event.location + "</strong><br><br>" + "<strong>Description: </strong>" + event.description 
+                });    
+            }
+            else {
+                element.qtip({
+                    content: event.title + " at <strong>" + event.location + "</strong><br>"
+                }); 
+            }
+//            var getDesc = (event.location) ? event.location : 'No Description';
+            console.log(event.title);
+        }
+    });
+});
+
+
 $(document).ready(function(){ 
 	slant();
 	window.scrollReveal = new scrollReveal();
