@@ -48,7 +48,7 @@ h5 span {
 h2,
 h4,
 h6 {
-	font-family: 'Lobster', cursive;
+	font-family: Montserrat, cursive;
 	font-weight: 900;
 }
 @keyframes hover {
@@ -135,7 +135,7 @@ h6 {
 	color: #ffffff;
 	display: block;
 	height: 100%;
-	min-height: 600px;
+	min-height: 100px;
 	padding-bottom: 50px;
 }
 
@@ -480,4 +480,17 @@ footer {
 .smol-text {
     font-size: 1em;
     margin: 0 0 0 0;
+}
+.navbar-brand {
+  width: 48px;
+}
+.navbar-brand img {
+  width: 100%;
+}
+/* Roster */
+.table>tbody>tr>td {
+    text-align: left;
+}
+.table>tbody>tr.even {
+    background-color: #dadada;
 }

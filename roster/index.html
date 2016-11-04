@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<!-- About -->
+      <section id="portfolio" style="background: #ffffff; z-index: 999;">
+        <div class="container-fluid" data-scroll-reveal="enter from top after 0.5s">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PLAYERS 2016-2017</h2>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Grade</th>
+                            <th>Height</th>
+                            <th>Position</th>
+                            <th>College</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% assign count = 1 %}
+                        {% for player in site.data.claremont-mens-roster-2015-2016 %}
+                            {% assign check = count | modulo:2 %}
+                        <tr {% if check == 1 %} class="odd" {% else %} class="even" {% endif %}>
+                            <td>{{ player.name }}</td>
+                            <td>{{ player.year }}</td>
+                            <td>{{ player.height }}</td>
+                            <td>{{ player.position }}</td>
+                            <td>{{ player.college }}</td>
+                        </tr>
+                            {% assign count = count | plus:1 %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>

@@ -1,52 +1,18 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Claremont Colleges Volleyball Club Team is a DII organization competing for championships locally and nationally">
-    <meta name="keywords" content="volleyball, club, competitive, men, claremont, calremont, division II, college, claremont mckenna, harvey mudd, pomona, pitzer, championship, claremont mudd scripps, pomona pitzer">
-    <title>Claremont Colleges Club Volleyball - Home</title>
-
-    {% include head.html %}
-  </head>
-  
-  <body>
-    <!-- Intro -->
+<!-- Intro -->
     <header id="intro">
       <div class="bg-holder parallax" data-width="1920" data-height="1280"></div>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <img class="logo" src="images/claremont-logo.png" alt="Claremont Men's Club Volleyball - Claremont Volleyball Logo" title="5C Claremont Men's Volleyball Club"/>
-            <h1><span>Warming</span> Up</h1>
-            <h1 class="smol-text">in</h1>
+            <img class="logo" src="/images/claremont-logo.png" alt="Claremont Men's Club Volleyball - Claremont Volleyball Logo" title="5C Claremont Men's Volleyball Club"/>
+<!--            <h1><span>Warming</span> Up</h1>-->
+            <h1 class="smol-text"></h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="countdown">
-              <div class="counter" id="days" data-scroll-reveal="wait 1.0s">
-                <div class="days">&nbsp;</div>
-                <span class="info">days</span>
-              </div>
-              <div class="counter" id="hours" data-scroll-reveal="wait 1.25s">
-                <div class="hours">&nbsp;</div>
-                <span class="info">hours</span>
-              </div>
-              <div class="counter" id="minutes" data-scroll-reveal="wait 1.5s">
-                <div class="minutes">&nbsp;</div>
-                <span class="info">minutes</span>
-              </div>
-              <div class="counter" id="seconds" data-scroll-reveal="wait 1.75s">
-                <div class="seconds">&nbsp;</div>
-                <span class="info">seconds</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
 <!--
         <div class="row">
           <a href="#about" class="button intro hvr-float" data-scroll-reveal="wait 2.25s">About</a>
@@ -61,7 +27,7 @@
         <div class="container-fluid" data-scroll-reveal="enter from top after 0.5s">
           <div class="row">
             <div class="col-md-6 col-md-offset-3">
-              <img src="images/usa-ball.png" class="img usa-volleyball" alt="blue and red men's volleyball" title="usa colored volleyball">
+              <img src="/images/usa-ball.png" class="img usa-volleyball" alt="blue and red men's volleyball" title="usa colored volleyball">
               <h2>About Us</h2>
               <div class="about-border about-hover">
                   <p id="about1" class="">The Claremont Men's Volleyball Club Team is a Division II college club that competes in regional and national tournaments. We were the reigning champions of the Southern California Collegiate Volleyball League (SCCVL) in 2015 and the runner-ups in 2016. The team is open to students from any of the Claremont Colleges (including CGU) and we pride ourselves on offering a high level of play to interested players. <i class="scroll blink fa fa-chevron-circle-down"></i></p>
@@ -104,19 +70,19 @@
           <div class="row">
             <h1 class="captain-head"><span>2016-2017</span> Captains</h1>
             <div class="person col-lg-2 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter right and move 50px over 1.25s">
-              <img src="images/captain1.png" alt="Earl Schultz volleyball co-captain spikes from Pitzer College" title="Earl Schultz volleyball co-captain spikes from Pitzer College" class="hvr-float img-responsive">
+              <img src="/images/captain1.png" alt="Earl Schultz volleyball co-captain spikes from Pitzer College" title="Earl Schultz volleyball co-captain spikes from Pitzer College" class="hvr-float img-responsive">
               <h3 data-scroll-reveal="enter from top after 1.25s"><span>Earl</span> Schultz</h3>
               <span data-scroll-reveal="enter from top after 1.5s">co-captain</span>
             </div>
             <div class="person col-lg-2 col-md-4 col-sm-4 col-xs-12">
-              <img src="images/captain2.png" alt="Alex Bresler from Pomona College" title="Alex Bresler volleyball co-captain portrait from Pomona College" class="hvr-float img-responsive">
+              <img src="/images/captain2.png" alt="Alex Bresler from Pomona College" title="Alex Bresler volleyball co-captain portrait from Pomona College" class="hvr-float img-responsive">
               <div>
               <h3 data-scroll-reveal="enter from top after 1.25s"><span>Alex </span>Bresler</h3>
               <span data-scroll-reveal="enter from top after 1.5s">co-captain</span>
               </div>
             </div>
             <div class="person col-lg-2 col-md-4 col-sm-4 col-xs-12" data-scroll-reveal="enter left and move 50px over 1.25s">
-              <img src="images/captain3.png" alt="Ian Thomas spikes from Pomona College" title="volleyball co-captain Ian Thomas spikes volleyball" class="hvr-float img-responsive">
+              <img src="/images/captain3.png" alt="Ian Thomas spikes from Pomona College" title="volleyball co-captain Ian Thomas spikes volleyball" class="hvr-float img-responsive">
               <h3 data-scroll-reveal="enter from top after 1.25s"><span>Ian</span> Thomas</h3>
               <span data-scroll-reveal="enter from top after 1.5s">co-captain</span>
             </div>
@@ -175,17 +141,3 @@
       </div>
     </section>
     <!-- End Contact -->
-
-    {% include footer.html %}
-
-    <!-- Javascript Files -->
-    {% include scripts.html %}
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv-3.7.0.min.js"></script>
-      <script src="js/respond-1.4.2.min.js"></script>
-    <![endif]-->
-  </body>
-</html>
