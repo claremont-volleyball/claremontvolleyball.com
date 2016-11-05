@@ -1,45 +1,51 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Success</title>
-
-    {% include head.html %}
-  </head>
-  
-  <body id="contact-body-success">
-    <!-- Contact -->
-    <section id="contact-success">
+<style>
+    nav.navbar-default {
+        margin-bottom: 0;
+    }
+</style>
+    <section id="contact">
       <div class="container-fluid">
         <div class="row" data-scroll-reveal="">
           <div class="col-md-6 col-md-offset-3">
-            <img src="/images/kangaroo-set.png" class="img kangaroo-set">
-            <h2>Success!</h2>
-            <p>Thanks for shooting us an email! We'll get back to you soon!</p>
+            <img src="/images/kangaroo-pass.png" alt="claremont kangaroo passing volleyball" title="A Kangaroo Passing" class="img kangaroo-pass">
+            <h2>Contact</h2>
+            <p>If you have any more questions about our season, the team, or how to join, please don't hesitate to check out our page or email us directly at <strong>claremontvolleyball@gmail.com</strong>. We would love for you to join us on our march to a national championship!</p>
           </div>
         </div>
-        <div class="row">
-          <a href="/" class="button button-contact-success intro hvr-float" data-scroll-reveal="wait 0.5s">Back</a>
-        </div>
+        <form action="https://formspree.io/info@claremontvolleyball.com" method="POST">
+            <div class="row" data-scroll-reveal="enter from top after 0.25s">
+              <div class="col-md-3 col-md-offset-3 col-xs-12">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control input-lg" id="inputName" placeholder="Name" onkeydown="Javascript:checkName();">
+                </div>
+              </div>
+              <div class="col-md-3 col-xs-12">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control input-lg" id="inputEmail" placeholder="E-mail" onkeydown="Javascript:checkEmail();">
+                </div>
+              </div>
+            </div>
+            <div class="row" data-scroll-reveal="enter from top after 0.35s">
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" name="_subject" class="form-control input-lg" placeholder="Subject">
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-scroll-reveal="enter from top after 0.45s">
+              <div class="col-md-6 col-md-offset-3 col-xs-12">
+                <div class="form-group">
+                  <textarea name="message" class="form-control input-lg" id="inputMessage" rows="3" placeholder="Message"></textarea>
+                </div>
+                <!--  hidden -->
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="/contact/success" />
+                <button type="submit" class="button hvr-float submit" data-scroll-reveal="enter from top after 0.5s">Submit</button>
+              </div>
+            </div>
+        </form>
       </div>
     </section>
-    <!-- End Contact -->
-
-    <!-- Footer -->
-    {% include footer.html %}
-
-    <!-- Javascript Files -->
-    {% include scripts.html %}
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv-3.7.0.min.js"></script>
-      <script src="js/respond-1.4.2.min.js"></script>
-    <![endif]-->
-  </body>
-</html>
