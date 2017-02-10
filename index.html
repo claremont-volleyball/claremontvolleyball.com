@@ -1,8 +1,33 @@
 ---
 layout: default
 ---
+<style>
+    video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+/*    background: url(polina.jpg) no-repeat;*/
+    background-size: cover; 
+}
+    #about {
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
+</style>
 <!-- Intro -->
     <header id="intro">
+    <video playsinline autoplay muted loop poster="" id="bgvid">
+        <source src="\arizona-clip.mp4" type="video/mp4">
+    </video>
       <div class="bg-holder parallax" data-width="1920" data-height="1280"></div>
       <div class="container-fluid">
         <div class="row">
